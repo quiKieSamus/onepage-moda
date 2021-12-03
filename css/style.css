@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: linear-gradient(to right, gray, darkblue);
+}
