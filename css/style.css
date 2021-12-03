@@ -4,5 +4,48 @@
 }
 
 body {
-    background-image: linear-gradient(to right, gray, darkblue);
+    background-image: linear-gradient(45deg, white, gray, darkblue);
+    height: 100%;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-ch {
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.pgraph {
+    max-width: 75ch;
+    text-align: justify;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    margin: auto 5px;
+}
+
+.item:hover {
+    border: black solid 1px;
+    border-top: white solid 3px;
+}
+
+@media only screen and (max-width: 600px) {
+    .img-ch {
+        width: 100%;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
 }
